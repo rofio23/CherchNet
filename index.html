@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CherchNet - Recherche</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">CherchNet</a>
+    <button id="themeBtn" aria-label="Changer le thème">☀</button>
+  </header>
+
+  <main>
+    <h1><span>Cherch</span>Net</h1>
+    <p class="subtitle">Explorez, découvrez, recherchez.</p>
+
+    <form id="searchForm">
+      <input id="searchInput"
+             type="search"
+             placeholder="Rechercher sur CherchNet..."
+             required>
+      <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="status" role="status"></div>
+    <section id="results" aria-label="Résultats de recherche"></section>
+  </main>
+
+  <footer>© 2026 CherchNet</footer>
+
+  <script src="base.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent: #0284c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 5%;
+}
+
+.brand {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#themeBtn {
+  padding: 10px 15px;
+  background: var(--surface);
+  color: var(--text);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+main {
+  width: min(850px, 94%);
+  margin: 65px auto;
+  flex: 1;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 80px);
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: -3px;
+}
+
+h1 span {
+  color: var(--accent);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 35px;
+}
+
+form {
+  display: flex;
+  background: var(--surface);
+  padding: 8px;
+  border-radius: 35px;
+  border: 1px solid var(--muted);
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 16px;
+}
+
+form button {
+  background: var(--accent);
+  color: #0f172a;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 30px;
+  color: var(--muted);
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.result {
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: var(--surface);
+}
+
+.result a {
+  color: var(--accent);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.result a:hover {
+  text-decoration: underline;
+}
+
+.result p {
+  color: var(--muted);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+}
